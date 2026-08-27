@@ -101,6 +101,10 @@ body {
   font-weight: 400;
 }
 
+.main-nav a[href="ueber-uns.html"] {
+  font-size: clamp(2rem, 4vw, 2.9rem);
+}
+
 .main-nav a::after {
   content: none;
 }
@@ -159,12 +163,16 @@ body {
 }
 
 .page-title {
-  font-size: clamp(2.2rem, 3vw, 3.1rem);
+  font-size: clamp(2.4rem, 3.3vw, 3.4rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   text-align: center;
-  margin: 0 0 48px;
+  margin: 22px 0 44px;
   color: #000;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
 }
 
 .hero-split {
@@ -260,7 +268,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #000;
-  text-align: justify;
+  text-align: left;
   hyphens: auto;
 }
 
@@ -309,7 +317,7 @@ body {
   grid-template-columns: 1fr 0.85fr;
   gap: 36px;
   align-items: center;
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
@@ -319,6 +327,34 @@ body {
 
 .exhibit-row.reverse .exhibit-image { order: 2; }
 .exhibit-row.reverse .exhibit-copy { order: 1; }
+
+.exhibit-row:nth-of-type(2) .exhibit-image {
+  transform: scale(1.56);
+  transform-origin: center;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+.exhibit-row:nth-of-type(3) .exhibit-image {
+  transform: scale(1.24);
+  transform-origin: center;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.exhibit-row:nth-of-type(3) {
+  grid-template-columns: 1.08fr 0.92fr;
+}
+
+.exhibit-row:nth-of-type(3) .exhibit-copy {
+  margin-left: 78px;
+}
+
+.exhibit-copy-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
 
 .exhibit-image {
   background: var(--panel);
@@ -398,6 +434,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 120px;
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
 }
 
 .artist-card {
@@ -440,32 +478,36 @@ body {
 
 .artist-card h3 {
   margin: 0;
-  font-size: clamp(2.2rem, 3vw, 3.1rem);
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
   font-weight: 400;
   letter-spacing: -0.04em;
 }
 
 .artist-card p {
   margin: 0;
+  max-width: 460px;
   font-size: 1rem;
   line-height: 1.5;
+  text-align: left;
 }
 
 .artist-card > div {
   display: flex;
   flex-direction: column;
-  gap: 1.9rem;
+  gap: 1.2rem;
+  max-width: 460px;
 }
 
 .press-list {
   display: flex;
   flex-direction: column;
-  max-width: 1100px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: 14px;
+  transform: translateX(-8px);
 }
 
 .press-item {
@@ -538,7 +580,7 @@ body {
 
 .site-footer {
   padding: 20px 0 28px;
-  margin-top: 12px;
+  margin-top: 42px;
 }
 
 .site-footer-row {
@@ -546,13 +588,15 @@ body {
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.2rem 1.2rem;
+  align-items: center;
+  gap: 0.5rem 1.1rem;
   text-align: center;
   font-size: 0.82rem;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .site-footer-row p {
@@ -560,7 +604,7 @@ body {
 }
 
 .site-footer-row a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
 }
 
@@ -594,13 +638,13 @@ body {
 
 .contact-hours h2 {
   margin: 0 0 12px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
   font-weight: 400;
 }
 
 .contact-hours p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--text);
   margin: 0 0 4px;
 }
@@ -608,6 +652,10 @@ body {
 .contact-address {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
+}
+
+.contact-address p {
+  font-size: 1.25rem;
 }
 
 .map-frame {
