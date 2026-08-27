@@ -28,7 +28,7 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p _site
-          cp -r assets css js *.html _site/
+          cp -r assets css fonts js *.html _site/
           touch _site/.nojekyll
 
       - name: Setup Pages
