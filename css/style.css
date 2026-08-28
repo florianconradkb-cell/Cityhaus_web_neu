@@ -111,9 +111,6 @@ body {
   margin: 0;
   padding: 0;
   background: white;
-  padding-left: 31px;
-  padding-bottom: 50px;
-  padding-top: 50px;
 }
 
 .main-nav a {
@@ -145,7 +142,7 @@ body {
   position: fixed;
   top: 50px;
   left: 30px;
-  display: block;
+  display: none;
   width: 30px;
   height: 18px;
   background: transparent;
@@ -766,19 +763,13 @@ h1, h2, h3 {
   color: #bbb;
 }
 
-@media (min-width: 769px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .main-nav {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   body.menu-open {
     overflow: hidden;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 
   .site-header {
