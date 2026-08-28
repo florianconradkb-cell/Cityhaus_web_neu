@@ -111,6 +111,9 @@ body {
   margin: 0;
   padding: 0;
   background: white;
+  padding-left: 31px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .main-nav a {
@@ -761,6 +764,16 @@ h1, h2, h3 {
 
 .leaflet-control-attribution a {
   color: #bbb;
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
