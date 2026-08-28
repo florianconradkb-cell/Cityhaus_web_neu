@@ -542,11 +542,15 @@ h1, h2, h3 {
   flex-direction: column;
   gap: 1.2rem;
   max-width: 460px;
-  padding-left: 50px;
 }
 
 .artist-card:nth-of-type(2) > div {
   max-width: 500px;
+}
+
+.artist-card:nth-of-type(1) > div,
+.artist-card:nth-of-type(3) > div {
+  padding-left: 50px;
 }
 
 .press-list {
@@ -647,7 +651,7 @@ h1, h2, h3 {
   align-items: center;
   gap: 0.8rem 1.5rem;
   text-align: center;
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.75);
 }
@@ -695,7 +699,6 @@ h1, h2, h3 {
 }
 
 .contact-hours {
-  margin-top: 26px;
 }
 
 .contact-hours h2 {
@@ -713,7 +716,6 @@ h1, h2, h3 {
 
 .contact-hours p:nth-of-type(2) {
   font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 
 .contact-address {
@@ -722,7 +724,7 @@ h1, h2, h3 {
 }
 
 .contact-address p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: 0px;
 }
 
@@ -910,11 +912,15 @@ h1, h2, h3 {
   .artist-card > div,
   .artist-card-reverse > div {
     order: 2;
+  }
+
+  .artist-card:nth-of-type(2) > div {
     padding-left: 0;
   }
 
   .artist-card:nth-of-type(1) > div,
   .artist-card:nth-of-type(3) > div {
+    padding-left: 0;
     margin-left: 0;
   }
 
