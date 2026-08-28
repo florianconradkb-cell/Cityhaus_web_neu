@@ -336,7 +336,7 @@ h1, h2, h3 {
 .exhibition-list {
   display: flex;
   flex-direction: column;
-  gap: 290px;
+  gap: 200px;
 }
 
 .exhibit-row {
