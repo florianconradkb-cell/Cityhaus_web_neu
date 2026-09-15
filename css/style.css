@@ -410,6 +410,11 @@ h1, h2, h3 {
   letter-spacing: -0.03em;
 }
 
+.exhibit-copy h2 .tight-letters,
+.artist-card h3 .tight-letters {
+  letter-spacing: 0em;
+}
+
 .exhibit-title {
   font-size: 1.1rem;
 }
@@ -518,6 +523,54 @@ h1, h2, h3 {
   filter: grayscale(0) contrast(1.04) saturate(1.08);
 }
 
+.event-gallery {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.event-heading {
+  margin-bottom: 10px;
+}
+
+.event-heading h2 {
+  display: inline;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.event-heading p {
+  display: inline;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.event-heading .event-artist {
+  display: block;
+}
+
+.event-gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 60px;
+}
+
+.event-gallery-list img {
+  display: block;
+  width: 75%;
+  height: auto;
+  align-self: flex-start;
+  filter: grayscale(1) contrast(1.02);
+  transition: filter 0.35s ease;
+}
+
+.event-gallery-list img:hover,
+.event-gallery-list img:focus-visible {
+  filter: grayscale(0) contrast(1.04) saturate(1.08);
+}
+
 .artist-card h3 {
   margin: 0;
   font-size: clamp(1.45rem, 2vw, 1.8rem);
@@ -531,6 +584,19 @@ h1, h2, h3 {
   font-size: 1rem;
   line-height: 1.5;
   text-align: left;
+}
+
+.vita-link {
+  color: #555;
+  font-size: 0.92em;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.vita-link:hover,
+.vita-link:focus-visible {
+  color: #000;
 }
 
 .artist-card > div {
@@ -794,7 +860,7 @@ h1, h2, h3 {
 
   .brand-wordmark {
     font-size: clamp(2.2rem, 7vw, 3rem);
-    letter-spacing: -0.08em;
+    letter-spacing: -0.04em;
   }
 
   .main-nav {
