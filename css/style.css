@@ -386,6 +386,16 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
+.exhibit-copy-link:hover .exhibit-title {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  color: black;
+}
+
+.exhibit-copy-link .exhibit-title {
+  color: #555;
+}
+
 .exhibit-image {
   background: var(--panel);
   box-shadow: var(--shadow);
