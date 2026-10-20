@@ -739,14 +739,19 @@ h1, h2, h3 {
   margin: 1.5rem 0 0.5rem;
 }
 
+.impressum-page .about-text h2,
+.impressum-page .about-text p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
 .impressum-page .about-text h2 {
-  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
 }
 
 .impressum-page .about-text p {
-  font-size: 1rem;
+  font-weight: 400;
 }
 
 .site-footer {
